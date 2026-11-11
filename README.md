@@ -13,7 +13,7 @@ Se entrenó con un dataset de 50.000 personas que ya tenía la respuesta, y con 
    ```
 3. Ejecutar los notebooks de la carpeta notebooks en orden, del 01 al 06. Cada uno usa archivos que deja guardados el anterior, así que no se pueden saltar.
 
-Los archivos originales en Excel tienen que estar en ddata/raw
+Los archivos originales en Excel tienen que estar en data/raw
 
 ## Estructura
 
