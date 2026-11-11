@@ -13,7 +13,7 @@ Se entrenó con un dataset de 50.000 personas que ya tenía la respuesta, y con 
    ```
 3. Ejecutar los notebooks de la carpeta notebooks en orden, del 01 al 06. Cada uno usa archivos que deja guardados el anterior, así que no se pueden saltar.
 
-Los archivos originales en Excel tienen que estar en data / raw.
+Los archivos originales en Excel tienen que estar en ddata/raw
 
 ## Estructura
 
@@ -37,7 +37,7 @@ requirements.txt
 
 ## Lo que fui haciendo
 
-**Lectura de datos.** Lo primero que encontré fue que las columnas con decimales venían dañadas. Al pasar por Google Sheets se guardaron como horas: por ejemplo, la hemoglobina 14.5 aparecía como 0.6 (es decir, 14 horas y 5 minutos). Lo corregí multiplicando por 24 y separando horas y minutos. Usé los .xlsx en vez de los .csv porque los csv tenían los valores redondeados. La columna oral tenía un solo valor, así que la eliminé junto con el ID.
+**Lectura de datos.** Lo primero que encontré fue que las columnas con decimales venían dañadas. Al pasar por Google Sheets se guardaron como horas: por ejemplo, una cintura de 81,3 cm quedó guardada como 81 horas y 3 minutos. Lo corregí multiplicando por 24 y separando horas y minutos. Usé los .xlsx en vez de los .csv porque los csv tenían los valores redondeados. La columna oral tenía un solo valor, así que la eliminé junto con el ID.
 
 **EDA.** El 36,7% de las personas fuma. Lo más fuerte fue el género: fuma el 55% de los hombres y solo el 4% de las mujeres. La hemoglobina, la altura y el peso parecían relacionados con fumar, pero al separar por género casi no había diferencia; en realidad reflejaban que los hombres tienen valores más altos. También vi casi ninguna mujer menor de 40 años, valores imposibles (LDL mayor que el colesterol total) y valores tope como 999 en algunos análisis.
 

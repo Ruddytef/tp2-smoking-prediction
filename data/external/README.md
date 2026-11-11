@@ -1,0 +1,1 @@
+   Carpeta para datos externos. En este trabajo no se usaron.
